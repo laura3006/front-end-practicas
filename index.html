@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crear cuenta</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="./index.js"></script>
+
+    </head>
+
+    <body>
+        <form>
+            <h1 class="title">Create Account</h1>
+            <label for="nombre">Nombre </label><br>
+                <div>
+                    <input type="text" name="nombre" id="nombre" class="campos" required>
+                    <i class="icon" id="icon-nombre"><img src="./images/error-icon.svg"></i>
+                </div>
+                    <span id="error-nombre" class="error"></span> <br>
+                    
+                    <br>
+            <label for="email">Email </label><br>
+                <div>
+                    <input type="email" name="email" id="email" class="campos" required>
+                    <i class="icon" id="icon-email"><img src="./images/error-icon.svg"></i>
+                </div>
+                    <span id="error-email" class="error"></span> <br>
+                
+
+                    <br>
+            <label for="clave">Clave </label> <br>
+                <div>    
+                    <input type="password" name="clave" id="clave" class="campos" required>
+                    <i class="icon" id="icon-clave"><img src="./images/error-icon.svg"></i>
+                </div>    
+                    <span id="error-clave" class="error"></span> <br>
+
+
+                    <br>
+            <label for="confirm">Confirme su clave </label> <br>
+                <div>
+                    <input type="password" name="confirm" id="confirm" class="campos" required> 
+                    <i class="icon" id="icon-confirm"><img src="./images/error-icon.svg"></i>
+                </div>
+                    <span id="error-confirm" class="error"></span> <br>
+
+                    <br>
+                <input type="submit" class="boton" onclick="enviar()" value="ENVIAR">
+        </form>
+    </body>
+</html>
